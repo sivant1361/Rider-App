@@ -9,8 +9,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LoginComponent } from './auth/login.component';
+import { ForgotPasswordComponent } from './auth/forgotpassword/forgotpassword.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, LoginComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    LoginComponent,
+    ForgotPasswordComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
