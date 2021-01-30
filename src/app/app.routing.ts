@@ -36,6 +36,11 @@ export const routes: Routes = [
       import("./pages/login/login.module").then((m) => m.LoginModule),
   },
   {
+    path: "forgotpassword",
+    loadChildren: () =>
+      import("./pages/forgotpassword/forgotpassword.module").then((m) => m.LoginModule),
+  },
+  {
     path: "register",
     loadChildren: () =>
       import("./pages/register/register.module").then((m) => m.RegisterModule),

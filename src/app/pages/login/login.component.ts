@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
-import { Router } from "@angular/router";
-import { HttpClient } from "@angular/common/http";
+import { PageService } from "../pages.service";
 
 @Component({
   selector: "app-login",
@@ -9,14 +8,14 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ["./login.component.scss"],
 })
 export class LoginComponent implements OnInit {
-  submit = false;
+  submit: boolean = false;
   form: FormGroup = new FormGroup({
     email: new FormControl(null, { validators: [Validators.required] }),
     password: new FormControl(null, { validators: [Validators.required] }),
     agCode: new FormControl(null, { validators: [Validators.required] }),
   });
 
-  constructor(private http: HttpClient,public router: Router) {}
+  constructor(public pageService: PageService) {}
 
   ngOnInit() {}
   onSavePost() {
@@ -25,12 +24,11 @@ export class LoginComponent implements OnInit {
       return;
     }
     console.log(this.form.value);
-    this.http
-      .post('http://localhost:3000/api/user/login', {email:this.form.value.email, password:this.form.value.password})
-      .subscribe((response) => {
-        console.log(response);
-      });
-    this.router.navigate(["/"]);
+    this.pageService.loginUser(
+      this.form.value.email,
+      this.form.value.password,
+      this.form.value.agCode
+    );
     this.form.reset();
   }
 }

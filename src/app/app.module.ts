@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { routing } from "./app.routing";
+import { HttpClientModule } from "@angular/common/http";
 import { PerfectScrollbarModule } from "ngx-perfect-scrollbar";
 import { PERFECT_SCROLLBAR_CONFIG } from "ngx-perfect-scrollbar";
 import { PerfectScrollbarConfigInterface } from "ngx-perfect-scrollbar";
@@ -24,7 +25,7 @@ import { SearchComponent } from "./pages/search/search.component";
 import { NotFoundComponent } from "./pages/errors/not-found/not-found.component";
 
 @NgModule({
-  imports: [BrowserModule, PerfectScrollbarModule, routing],
+  imports: [BrowserModule, PerfectScrollbarModule, routing, HttpClientModule],
   declarations: [
     AppComponent,
     PagesComponent,
