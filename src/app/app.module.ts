@@ -23,9 +23,10 @@ import { UserMenuComponent } from "./theme/components/user-menu/user-menu.compon
 import { BlankComponent } from "./pages/blank/blank.component";
 import { SearchComponent } from "./pages/search/search.component";
 import { NotFoundComponent } from "./pages/errors/not-found/not-found.component";
+import { TreeGridModule } from '@syncfusion/ej2-angular-treegrid';
 
 @NgModule({
-  imports: [BrowserModule, PerfectScrollbarModule, routing, HttpClientModule],
+  imports: [BrowserModule, PerfectScrollbarModule, routing, HttpClientModule, TreeGridModule],
   declarations: [
     AppComponent,
     PagesComponent,

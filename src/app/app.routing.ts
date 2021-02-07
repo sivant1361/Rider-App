@@ -41,6 +41,11 @@ export const routes: Routes = [
       import("./pages/forgotpassword/forgotpassword.module").then((m) => m.LoginModule),
   },
   {
+    path: "lists",
+    loadChildren: () =>
+      import("./pages/list/list.module").then((m) => m.ListModule),
+  },
+  {
     path: "register",
     loadChildren: () =>
       import("./pages/register/register.module").then((m) => m.RegisterModule),

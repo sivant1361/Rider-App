@@ -1,0 +1,100 @@
+{
+    "lists": [
+        {
+            "id": "1",
+            "name": "value 1",
+            "code": "code 1",
+            "isAvailable": true
+        },
+        {
+            "id": "2",
+            "name": "value 2",
+            "code": "code 2",
+            "isAvailable": true
+        },
+        {
+            "id": "3",
+            "name": "value 3",
+            "code": "code 3",
+            "isAvailable": true
+        },
+        {
+            "id": "4",
+            "name": "value 4",
+            "code": "code 4",
+            "isAvailable": true
+        },
+        {
+            "id": "5",
+            "name": "value 5",
+            "code": "code 5",
+            "isAvailable": true
+        },
+        {
+            "id": "6",
+            "name": "value 6",
+            "code": "code 6",
+            "isAvailable": true
+        },
+        {
+            "id": "7",
+            "name": "value 7",
+            "code": "code 7",
+            "isAvailable": true
+        },
+        {
+            "id": "8",
+            "name": "value 8",
+            "code": "code 8",
+            "isAvailable": true
+        },
+        {
+            "id": "9",
+            "name": "value 9",
+            "code": "code 9",
+            "isAvailable": true
+        },
+        {
+            "id": "10",
+            "name": "value 10",
+            "code": "code 10",
+            "isAvailable": true
+        },
+        {
+            "id": "11",
+            "name": "value 11",
+            "code": "code 11",
+            "isAvailable": true
+        },
+        {
+            "id": "12",
+            "name": "value 12",
+            "code": "code 12",
+            "isAvailable": true
+        },
+        {
+            "id": "13",
+            "name": "value 13",
+            "code": "code 13",
+            "isAvailable": true
+        },
+        {
+            "id": "14",
+            "name": "value 14",
+            "code": "code 14",
+            "isAvailable": true
+        },
+        {
+            "id": "15",
+            "name": "value 15",
+            "code": "code 15",
+            "isAvailable": true
+        },
+        {
+            "id": "16",
+            "name": "value 16",
+            "code": "code 16",
+            "isAvailable": true
+        }
+    ]
+}
